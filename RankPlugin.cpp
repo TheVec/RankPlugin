@@ -4,6 +4,16 @@
 
 BAKKESMOD_PLUGIN(RankPlugin, "Rank Display Plugin", "0.1", PLUGINTYPE_FREEPLAY)
 
+RankPlugin::RankPlugin()
+{
+
+}
+
+RankPlugin::~RankPlugin()
+{
+
+}
+
 void RankPlugin::onLoad()
 {
 	cvarManager->log("RankPlugin loaded.");
@@ -14,7 +24,7 @@ void RankPlugin::onLoad()
 
 void RankPlugin::OnFreeplayLoad(std::string eventName)
 {
-	cvarManager->log("[RankPlugin]:Freeplay loaded.");
+	cvarManager->log("[RankPlugin]: Freeplay loaded.");
 }
 
 void  RankPlugin::onUnload()

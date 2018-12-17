@@ -8,6 +8,9 @@
 class RankPlugin : public BakkesMod::Plugin::BakkesModPlugin
 {
 public:
+	RankPlugin();
+	~RankPlugin();
+
 	virtual void onLoad();
 	virtual void onUnload();
 	
